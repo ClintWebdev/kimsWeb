@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kim's BOUTIQUE</title>
+ 
+  
+  <link rel="stylesheet" href="fonts/Roboto/Roboto-Regular.ttf">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="breakpoints.css">
+  <link rel="stylesheet" href="aos-master/aos-master/dist/aos.css">
+  <link rel="shortcut icon" href="images/img1.jpg" type="image/x-icon">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo" data-aos="flip-left"><span id="logo">Ki</span>m</a>
+      <ul id="menuList">
+        <li><a href="#parent1">Home</a></li>
+        <li><a href="#parent2">About</a></li>
+        <li><a href="#parent3">Gallery</a></li>
+        <li><a href="#parent4">Contact</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></i>
+      </a>
+    </nav>
+  </header>
+  <div class="container1">
+  <div id="parent1">
+    <div class="profile-image" data-aos="zoom-in-left"> 
+      <img src="images/img1.jpg" alt=""  width="300" height="300">
+   </div>
+    <div class="profile-info" data-aos="fade-up-right"> 
+      <h3>Welcome to</h3>
+      <h1>Kim's<span > Fashion</span></h1>
+      <h2><span>BOUTIQUE</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, veritatis?Lorem ipsum dolor sit amet.</p>
+    </div>
+    
+    <div class="icons">
+      
+         <a href="" onclick="redirectToFacebook()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+          <a href=""  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+          <a href=""  onclick="redirectToInsta()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+      
+    </div>
+   
+    <button class="btn" type="button" onclick="scrollToContact()" >
+      <strong>Contact us</strong>
+      <div id="container-stars">
+        <div id="stars"></div>
+      </div>
+    
+      <div id="glow">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </button>
+    
+    <script>
+     
+      function scrollToContact() {
+        
+          const contactSection = document.getElementById('parent4');
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+      function redirectToInsta() {
+       
+        window.open("https://www.instagram.com", "_blank");
+    }
+    function redirectToFacebook() {
+     
+      window.open("https://www.facebook.com", "_blank");
+  }
+  function redirectToX() {
+   
+    window.open("https://www.twitter.com", "_blank");
+}
+
+  </script>
+   
+    </div>
+  </div>
+  <!----------------------------------------about----------------------------------------------->
+  <!--------------------------------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------->
+  <div class="container2">
+    
+    <div id="parent2" >
+      
+        <div class="about-header" data-aos="fade-down"><h1>About <span>us</span></h1> </div>
+        <div class="about-image" data-aos="fade-right">
+          <img src="images/img1.jpg" alt="my image">
+        </div>
+        <div class="about-info" data-aos="fade-left">
+          <p>Welcome to <span>Kim's Fashion Boutique</span>, where style meets elegance! Our boutique is a haven for fashion enthusiasts seeking unique, chic, and trendy clothing pieces. With a curated collection ranging from casual wear to formal attire, we cater to every fashion need. At Kim's, we believe that fashion is an expression of individuality, and our mission is to empower every customer to embrace their personal style confidently. Whether you're looking for the perfect outfit for a special occasion or simply want to refresh your wardrobe with the latest trends, Kim's Fashion Boutique is your ultimate destination. Experience the joy of shopping with us and embark on a journey of style and sophistication!</p>
+        </div>
+        
+      </div>
+        
+    
+  </div>
+  <!-----------------------------------------gallery---------------------------------------------->
+  <!--------------------------------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------->
+  <div id="container3">
+    <div id="parent3">
+      <div id="gallery" data-aos="fade-down">
+        <h1>
+         <span>My</span> Gallery
+        </h1>
+      </div>
+      <div class="imagesContainer"  data-aos="zoom-in">
+      
+      <div ><img src="images/img1.jpg" alt="" ></div>
+      <div ><img src="images/img2.jpg" alt="" ></div>
+      <div ><img src="images/img3.jpg" alt="" ></div>
+      <div ><img src="images/img4.jpg" alt="" ></div>
+      <div><img src="images/img1.jpg" alt="" ></div>
+      <div ><img src="images/img2.jpg" alt="" ></div>
+      
+    </div>
+  </div>
+  </div>
+  <div id="container4">
+    <div id="parent4">
+      <div id="contact" data-aos="fade-down">
+        <h1>Contact <span>us</span></h1>
+      </div>
+      <div id="contact-Container">
+        <div class="my-Details"  data-aos="fade-right">
+          <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><p>+09162914845</p></div>
+          <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg><p>kimsBoutique@gmail.com</p></div>
+          <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <p>Tandag , Surigao Del Sur</p></div>
+        </div>
+        <div class="divider"></div>
+        <div class="form-Container"  data-aos="fade-left">
+          <form action="">
+            <label for="name">Your Name</label><br>
+            <input type="text" id="name"><br>
+            <label for="name">Your Email</label><br>
+            <input type="email" id="email"><br>
+            <label for="message">Your Message</label>
+            <textarea name="" id="message" cols="30" rows="6"></textarea><br>
+            <button type="reset" id="send" onclick="sentMessage()">
+              <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      fill="currentColor"
+                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <span>Send</span>
+            </button>
+            
+            
+          </form>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+
+ 
+
+  <script src="aos-master/aos-master/dist/aos.js"></script>
+  <script>
+    function toggleMenu() {
+        const menuList = document.getElementById("menuList");
+        menuList.classList.toggle("show");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuItems = document.querySelectorAll("#menuList li");
+        menuItems.forEach(function (menuItem) {
+            menuItem.addEventListener("click", function () {
+                toggleMenu();
+            });
+        });
+    });
+    function sentMessage(){
+      alert("Message Sent");
+    }
+</script>
+
+ 
+</body>
+</html>
+<script>
+  AOS.init({
+    duration:1000
+  });
+</script>
